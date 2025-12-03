@@ -44,3 +44,10 @@ Thumbs.db
 .github/instructions/nx.instructions.md
 
 vite.config.*.timestamp*
+
+# env
+.env
+/apps/api/prisma/migrations/**/*.sql
+
+# database
+/packages/shared/datatypes/src/database/generated
