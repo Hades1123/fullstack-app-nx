@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "prisma:init": "dotenv -e ./apps/api/.env -- npx prisma migrate reset --config=./apps/api/prisma.config.ts --force && dotenv -e ./apps/api/.env -- npx prisma migrate dev --config=./apps/api/prisma.config.ts --name init"
+    "prisma:init": "dotenv -e ./apps/api/.env -- npx prisma migrate reset --config=./apps/api/prisma.config.ts --force && dotenv -e ./apps/api/.env -- npx prisma migrate dev --config=./apps/api/prisma.config.ts --name init && dotenv -e ./apps/api/.env -- npx prisma generate --config=./apps/api/prisma.config.ts"
   },
   "private": true,
   "devDependencies": {
