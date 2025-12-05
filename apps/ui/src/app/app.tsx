@@ -13,18 +13,6 @@ export function App() {
       const user: UserResponse = result.message;
       console.log('[INFO] ', user.name, user.age);
     };
-
-    const createUser = async () => {
-      const result = await fetch(`${import.meta.env.VITE_BACKEND_URL}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name: 'vansi', email: 'dp1.1a7.si@gmail.com' }),
-      });
-    };
-
-    createUser();
     loadData();
   }, []);
   return (

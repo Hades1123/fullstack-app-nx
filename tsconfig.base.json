@@ -15,9 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@fullstack-app/datatypes": ["./packages/shared/datatypes/src/index.ts"],
-      "@api/*": ["./apps/api/src/*"],
-      "@ui/*": ["./apps/ui/src/*"]
+      "@fullstack-app/datatypes": ["packages/shared/datatypes/src/index.ts"],
+      "@api/*": ["apps/api/src/*"],
+      "@ui/*": ["apps/ui/src/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
