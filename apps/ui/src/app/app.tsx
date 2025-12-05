@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import NxWelcome from '@ui/app/nx-welcome';
-import { UserResponse } from '@fullstack-app/datatypes';
+import { User, UserResponse } from '@fullstack-app/datatypes';
 
 export function App() {
   useEffect(() => {
@@ -10,8 +10,8 @@ export function App() {
       })
         .then((data) => data.json())
         .catch((error) => console.error(error));
-      const user: UserResponse = result.message;
-      console.log('[INFO] ', user.name, user.age);
+      const user: User = result.message;
+      console.log('[INFO] ', user.name, user.email, user.id);
     };
     loadData();
   }, []);

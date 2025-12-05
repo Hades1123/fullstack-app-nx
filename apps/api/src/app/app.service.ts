@@ -8,9 +8,9 @@ export class AppService {
   getData(): { message: User } {
     return {
       message: {
-        name: 'vansi',
+        name: 'vansi1111',
         email: 'dp1.1a7.si@gmail.com',
-        id: 32,
+        id: 32222,
       },
     };
   }
